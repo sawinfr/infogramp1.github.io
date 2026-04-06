@@ -1,0 +1,466 @@
+﻿<!DOCTYPE html><html><head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+<title>인포그램 포트폴리오</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background-color: #222; font-family: 'Malgun Gothic', sans-serif; touch-action: manipulation; -webkit-text-size-adjust: 100%; }
+  .slide { position:relative; width:960pt; height:540pt; background:#fff; box-shadow: 0 10px 30px rgba(0,0,0,0.8); flex-shrink: 0; transform-origin: center center; }
+  body.page-mode { position: fixed; top: 0; left: 0; width: 100vw; height: 100%; overflow: hidden; }
+  #presentation-container { position: absolute; top: 0; left: 0; right: 0; bottom: 60px; display: flex; justify-content: center; align-items: center; overflow: hidden; }
+  .slide-wrapper { position: absolute; display: none; justify-content: center; align-items: center; width: 100%; height: 100%; }
+  .slide-wrapper.active { display: flex; }
+  #bottom-nav { position: absolute; bottom: 0; left: 0; right: 0; height: 60px; background: rgba(0,0,0,0.9); display: flex; justify-content: center; align-items: center; z-index: 9999; backdrop-filter: blur(10px); padding: 0 15px; }
+  .nav-center { display: flex; justify-content: center; align-items: center; gap: 6px; flex: 1; }
+  .btn { padding: 8px 14px; background: rgba(255,255,255,0.1); color: #fff; border: 1px solid rgba(255,255,255,0.3); border-radius: 5px; cursor: pointer; font-size: 14px; white-space: nowrap; transition: 0.2s; display: flex; align-items: center; justify-content: center; }
+  .btn:hover { background: rgba(255,255,255,0.3); }
+  #pdf-btn { position: absolute; left: 15px; background: rgba(41, 128, 185, 0.7); font-weight: bold; border-color: rgba(255,255,255,0.3); text-decoration: none; }
+  #pdf-btn:hover { background: rgba(41, 128, 185, 1); }
+  #fs-btn { position: absolute; right: 15px; background: rgba(255,255,255,0.15); font-weight: bold; border-color: rgba(255,255,255,0.5); }
+  #page-indicator { color: #fff; font-size: 15px; font-weight: bold; margin: 0 10px; display: flex; align-items: center; white-space: nowrap; }
+  #page-input { width: 45px; padding: 5px; margin-right: 6px; text-align: center; font-size: 15px; font-weight: bold; color: #fff; background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.4); border-radius: 4px; outline: none; }
+  #page-input::-webkit-outer-spin-button, #page-input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+  @media (max-width: 768px) {
+    #presentation-container { bottom: 75px; }
+    #bottom-nav { height: 75px; padding: 0 6px; }
+    .nav-center { gap: 3px; }
+    .btn { padding: 12px 6px; font-size: 12px; }
+    #fs-btn { display: none !important; }
+    #pdf-btn { position: static; margin-right: auto; }
+    #page-indicator { margin: 0 2px; font-size: 13px; }
+    #page-input { width: 35px; padding: 6px 0; font-size: 13px; margin-right: 2px; }
+  }
+</style></head>
+<body class='page-mode'>
+<div id='presentation-container'>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_1'>
+      <img src='Slide_1.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_2'>
+      <img src='Slide_2.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+      <a href='#slide_52' target='_self' style='position:absolute; display:block; z-index:10; top:129.8287pt; left:564.5977pt; width:284.5015pt; height:33.92811pt;'></a>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_3'>
+      <img src='Slide_3.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_4'>
+      <img src='Slide_4.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+      <a href='#slide_27' target='_self' style='position:absolute; display:block; z-index:10; top:260.8921pt; left:676.8668pt; width:171.5339pt; height:21.81095pt;'></a>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_5'>
+      <img src='Slide_5.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+      <a href='https://infogram.kr/' target='_blank' style='position:absolute; display:block; z-index:10; top:134.0869pt; left:57.40268pt; width:407.1856pt; height:166.3011pt;'></a>
+      <a href='https://infogram.kr/' target='_blank' style='position:absolute; display:block; z-index:10; top:159.9987pt; left:633.69pt; width:224.4204pt; height:26.65779pt;'></a>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_6'>
+      <img src='Slide_6.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+      <a href='#slide_25' target='_self' style='position:absolute; display:block; z-index:10; top:255.3857pt; left:599.0674pt; width:29.71858pt; height:29.71858pt;'></a>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_7'>
+      <img src='Slide_7.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_8'>
+      <img src='Slide_8.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_9'>
+      <img src='Slide_9.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_10'>
+      <img src='Slide_10.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_11'>
+      <img src='Slide_11.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_12'>
+      <img src='Slide_12.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_13'>
+      <img src='Slide_13.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_14'>
+      <img src='Slide_14.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_15'>
+      <img src='Slide_15.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_16'>
+      <img src='Slide_16.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_17'>
+      <img src='Slide_17.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_18'>
+      <img src='Slide_18.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_19'>
+      <img src='Slide_19.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_20'>
+      <img src='Slide_20.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_21'>
+      <img src='Slide_21.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_22'>
+      <img src='Slide_22.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_23'>
+      <img src='Slide_23.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_24'>
+      <img src='Slide_24.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_25'>
+      <img src='Slide_25.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_26'>
+      <img src='Slide_26.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_27'>
+      <img src='Slide_27.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_28'>
+      <img src='Slide_28.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_29'>
+      <img src='Slide_29.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_30'>
+      <img src='Slide_30.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_31'>
+      <img src='Slide_31.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_32'>
+      <img src='Slide_32.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_33'>
+      <img src='Slide_33.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_34'>
+      <img src='Slide_34.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_35'>
+      <img src='Slide_35.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_36'>
+      <img src='Slide_36.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_37'>
+      <img src='Slide_37.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_38'>
+      <img src='Slide_38.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_39'>
+      <img src='Slide_39.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_40'>
+      <img src='Slide_40.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_41'>
+      <img src='Slide_41.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_42'>
+      <img src='Slide_42.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_43'>
+      <img src='Slide_43.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_44'>
+      <img src='Slide_44.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_45'>
+      <img src='Slide_45.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_46'>
+      <img src='Slide_46.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_47'>
+      <img src='Slide_47.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_48'>
+      <img src='Slide_48.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_49'>
+      <img src='Slide_49.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_50'>
+      <img src='Slide_50.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_51'>
+      <img src='Slide_51.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_52'>
+      <img src='Slide_52.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_53'>
+      <img src='Slide_53.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_54'>
+      <img src='Slide_54.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+      <img src='Slide_54_Shape_4.gif' style='position:absolute; z-index:5; top:-2.110236E-02pt; left:353.7337pt; width:606.2663pt; height:540pt;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_55'>
+      <img src='Slide_55.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_56'>
+      <img src='Slide_56.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_57'>
+      <img src='Slide_57.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+    </div>
+  </div>
+  <div class='slide-wrapper'>
+    <div class='slide' id='slide_58'>
+      <img src='Slide_58.jpg' style='position:absolute; top:0; left:0; width:100%; height:100%;'>
+      <a href='https://unsplash.com/ko' target='_blank' style='position:absolute; display:block; z-index:10; top:403.7097pt; left:705.6875pt; width:51.81252pt; height:14.10906pt;'></a>
+      <a href='https://pixabay.com/' target='_blank' style='position:absolute; display:block; z-index:10; top:425.8121pt; left:705.6875pt; width:51.81252pt; height:14.10906pt;'></a>
+      <a href='https://www.pexels.com/ko-kr/' target='_blank' style='position:absolute; display:block; z-index:10; top:447.6604pt; left:705.6875pt; width:51.81252pt; height:14.10906pt;'></a>
+    </div>
+  </div>
+</div>
+<div id='bottom-nav'>
+  <a id='pdf-btn' class='btn' href='Portfolio.pdf' download>PDF 다운로드</a>
+  <div class='nav-center'>
+    <button class='btn' onclick='firstSlide()'>&lt;&lt; 처음</button>
+    <button class='btn' onclick='prevSlide()'>&lt; 이전</button>
+    <span id='page-indicator'><input type='number' id='page-input' value='1' min='1' max='58'> / 58</span>
+    <button class='btn' onclick='nextSlide()'>다음 &gt;</button>
+    <button class='btn' onclick='lastSlide()'>끝 &gt;&gt;</button>
+  </div>
+  <button class='btn' id='fs-btn' onclick='toggleFullScreen()'>전체화면</button>
+</div>
+<script>
+  const totalSlides = 58;
+  let currentSlide = 1;
+  const isPageMode = document.body.classList.contains('page-mode');
+  const isMobileOS = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  if (isMobileOS) {
+    const fsBtn = document.getElementById('fs-btn');
+    if (fsBtn) fsBtn.style.display = 'none';
+  }
+  function toggleFullScreen() {
+    const doc = window.document;
+    const docEl = doc.documentElement;
+    const requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
+    const cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
+    if (!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
+      if(requestFullScreen) requestFullScreen.call(docEl);
+      document.getElementById('fs-btn').innerText = '축소';
+    } else {
+      if(cancelFullScreen) cancelFullScreen.call(doc);
+      document.getElementById('fs-btn').innerText = '전체화면';
+    }
+  }
+  function resizeSlides() {
+    const container = document.getElementById('presentation-container');
+    const containerW = container.clientWidth;
+    const containerH = container.clientHeight;
+    const slideW = 960 * 1.33333;
+    const slideH = 540 * 1.33333;
+    let scale = 1;
+    if (isPageMode) {
+      scale = Math.min((containerW - 20) / slideW, (containerH - 20) / slideH);
+      document.querySelectorAll('.slide').forEach(s => { s.style.transform = `scale(${scale})`; });
+    } else {
+      scale = Math.min((window.innerWidth - 30) / slideW, 1);
+      document.querySelectorAll('.slide').forEach(s => {
+        s.style.transform = `scale(${scale})`;
+        s.parentElement.style.height = (slideH * scale) + 'px';
+      });
+    }
+  }
+  window.addEventListener('resize', resizeSlides);
+  window.addEventListener('orientationchange', () => setTimeout(resizeSlides, 200));
+  function showSlide(index) {
+    if (index < 1) index = 1;
+    if (index > totalSlides) index = totalSlides;
+    currentSlide = index;
+    document.querySelectorAll('.slide-wrapper').forEach((w, i) => {
+      if (i + 1 === currentSlide) w.classList.add('active');
+      else w.classList.remove('active');
+    });
+    document.getElementById('page-input').value = currentSlide;
+    resizeSlides();
+  }
+  function firstSlide() { showSlide(1); }
+  function nextSlide() { showSlide(currentSlide + 1); }
+  function prevSlide() { showSlide(currentSlide - 1); }
+  function lastSlide() { showSlide(totalSlides); }
+  document.getElementById('page-input').addEventListener('change', function() {
+    let val = parseInt(this.value);
+    if(isNaN(val)) val = currentSlide;
+    showSlide(val);
+  });
+  document.addEventListener('keydown', function(e) {
+    if (!isPageMode || e.target.tagName.toLowerCase() === 'input') return;
+    switch(e.key) {
+      case 'ArrowRight':
+      case 'ArrowDown':
+      case 'PageDown':
+        e.preventDefault(); nextSlide(); break;
+      case 'ArrowLeft':
+      case 'ArrowUp':
+      case 'PageUp':
+        e.preventDefault(); prevSlide(); break;
+      case 'Home':
+        e.preventDefault(); firstSlide(); break;
+      case 'End':
+        e.preventDefault(); lastSlide(); break;
+    }
+  });
+  let isScrolling = false;
+  window.addEventListener('wheel', function(e) {
+    if (isPageMode && !isScrolling) {
+      if (e.deltaY > 0) {
+        nextSlide();
+        isScrolling = true;
+        setTimeout(() => { isScrolling = false; }, 500);
+      } else if (e.deltaY < 0) {
+        prevSlide();
+        isScrolling = true;
+        setTimeout(() => { isScrolling = false; }, 500);
+      }
+    }
+  }, { passive: true });
+  let touchstartX = 0; let touchstartY = 0;
+  document.addEventListener('touchstart', e => {
+    touchstartX = e.changedTouches[0].screenX;
+    touchstartY = e.changedTouches[0].screenY;
+  }, {passive: true});
+  document.addEventListener('touchend', e => {
+    let touchendX = e.changedTouches[0].screenX;
+    let touchendY = e.changedTouches[0].screenY;
+    let diffX = touchstartX - touchendX;
+    let diffY = Math.abs(touchstartY - touchendY);
+    if (Math.abs(diffX) > 50 && diffY < 100) {
+      if (diffX > 0) nextSlide();
+      else prevSlide();
+    }
+  });
+  document.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+      if (href && href.startsWith('#slide_')) {
+        e.preventDefault();
+        const targetSlide = parseInt(href.replace('#slide_', ''));
+        showSlide(targetSlide);
+      }
+    });
+  });
+  showSlide(1);
+</script>
+</body></html>
